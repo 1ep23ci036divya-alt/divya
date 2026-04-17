@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospital UI</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f8fb;
+    }
+
+    header {
+        background: #0a74da;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .hero {
+        background: linear-gradient(rgba(10,116,218,0.8), rgba(10,116,218,0.8)),
+                    url('https://images.unsplash.com/photo-1586773860418-d37222d8fce3');
+        background-size: cover;
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .container {
+        padding: 40px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .card img {
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    .card h3 {
+        margin: 10px 0 5px;
+    }
+
+    .appointment {
+        background: #e3f2fd;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .appointment input, .appointment button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .appointment button {
+        background: #0a74da;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        background: #0a74da;
+        color: white;
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>City Hospital</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Doctors</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Your Health, Our Priority</h2>
+    <p>24/7 Medical Services with Expert Doctors</p>
+</section>
+
+<div class="container">
+    <h2 class="section-title">Our Doctors</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg">
+            <h3>Dr. John Smith</h3>
+            <p>Cardiologist</p>
+        </div>
+
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg">
+            <h3>Dr. Sarah Lee</h3>
+            <p>Neurologist</p>
+        </div>
+
+        <div class="card">
+            <img src="https://randomuser.me/api/portraits/men/55.jpg">
+            <h3>Dr. David Kim</h3>
+            <p>Orthopedic</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="section-title">Book Appointment</h2>
+    <div class="appointment">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email">
+        <input type="date">
+        <button>Book Now</button>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 City Hospital. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
